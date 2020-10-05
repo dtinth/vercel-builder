@@ -19,7 +19,8 @@
     "refresh:example-side-by-side-admin": "cd examples/side-by-side/admin && yarn upgrade && rm yarn.lock && yarn && rm -rf node_modules",
     "refresh:example-side-by-side-app": "cd examples/side-by-side/app && yarn upgrade && rm yarn.lock && yarn && rm -rf node_modules",
     "prepare": "yarn build",
-    "release": "standard-version && git push --follow-tags"
+    "release": "standard-version && git push --follow-tags",
+    "release:pre": "standard-version --prerelease && git push --follow-tags"
   },
   "dependencies": {
     "@vercel/node-bridge": "1.3.1",
